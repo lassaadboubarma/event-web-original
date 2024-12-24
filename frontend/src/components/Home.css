@@ -1,0 +1,111 @@
+/* Home page container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f7f8fa;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Allows for absolute positioning of buttons */
+}
+
+/* Styling for the header */
+.home-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Styling for the subtitle */
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Styling for the authentication buttons (Sign Up and Login) */
+.auth-buttons {
+  position: absolute; /* Position it at the top right */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Button styling for Login and Sign Up */
+.auth-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the navigation buttons (Event List and Create Event) */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centering buttons horizontally */
+  gap: 30px; /* Add space between buttons */
+  margin-top: 40px;
+}
+
+.navbar .home-button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Round corners for a modern look */
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px; /* Make the buttons wider */
+}
+
+.navbar .home-button:hover {
+  background-color: #0056b3;
+}
+
+.navbar .home-button:active {
+  transform: translateY(2px);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .home-header {
+    font-size: 2.5rem;
+  }
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .auth-button {
+    padding: 8px 15px;
+    font-size: 1rem;
+  }
+
+  .navbar .home-button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    width: 200px; /* Adjust button size on small screens */
+  }
+}

@@ -1,0 +1,191 @@
+/* Container for the event list */
+.event-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  /* Event card styles */
+  .event-card {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for event cards */
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Event title */
+  .event-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Event description */
+  .event-card p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Date styles */
+  .event-card .date {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* RSVP form styles */
+  .rsvp-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rsvp-form input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .rsvp-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .rsvp-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Attendee list styles */
+  .attendee-list {
+    margin-top: 15px;
+  }
+  
+  .attendee-list li {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Poll options styles */
+  .poll-options {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .poll-options h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .poll-options ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .poll-options li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .poll-options button {
+    padding: 8px 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .poll-options button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Show/Hide Attendees Button */
+.attendees-button {
+    padding: 12px 20px; /* Slightly bigger padding */
+    background-color: #007bff; /* Green background for better visibility */
+    color: white;
+    border: none;
+    border-radius: 8px; /* More rounded corners for a softer look */
+    cursor: pointer;
+    font-size: 1rem; /* Slightly larger font size */
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .attendees-button:hover {
+    background-color: #0056b3; /* Darker green when hovering */
+  }
+  
+  /* Vote Button */
+  .poll-options button {
+    padding: 12px 20px; /* Make the vote button consistent in size */
+    background-color: #007bff; /* Match the color of other buttons */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners to match the theme */
+    cursor: pointer;
+    font-size: 1rem; /* Consistent font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .poll-options button:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
+  }  
+  
+/* Home button styling for EventList */
+.eventlist-home-button {
+  position: fixed; /* Fixes the position at the top-left */
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 9999; /* Ensures it stays on top of other content */
+}
+
+.eventlist-home-button:hover {
+  background-color: #0056b3;
+}
+
